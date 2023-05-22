@@ -8,11 +8,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Media Podium",
   tagline:
-    "AI-powered audio and video transcription app without limit of time length.",
+    "AI-powered audio and video transcription app. Unlimited free transcription time.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://mediapodium.app",
+  url: "https://www.mediapodium.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -63,7 +63,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      metadata: [
+        {
+          name: "keywords",
+          content:
+            "Speech to Text, Audio/Video to Text, Transcription, Subtitle generation, Audio player, Video player. Free. Unlimited free transcription time.",
+        },
+      ],
+      image: "img/logo.png",
       navbar: {
         title: "Media Podium",
         logo: {
@@ -88,7 +95,7 @@ const config = {
       footer: {
         style: "dark",
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Podium.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Media Podium.`,
       },
       prism: {
         theme: lightCodeTheme,

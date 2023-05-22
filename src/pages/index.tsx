@@ -30,8 +30,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title} | ${siteConfig.tagline}`}
+      description="Media Podium aims to be an excellent personal audio and video management tool. Transcribe your audio and video files into text. There is no transcription time limit. Transcriptions can be exported as subtitles or as plain text."
     >
       <HomepageHeader />
       <section className={styles.section}>
