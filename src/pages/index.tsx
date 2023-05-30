@@ -12,7 +12,13 @@ function HomepageHeader() {
     <header className={clsx("hero", styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          AI-powered audio and video transcription app. Unlimited free
+          transcription time.
+        </p>
+        <p className="hero__subtitle">
+          Everything is done locally. <strong>Protect your privacy.</strong>
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
@@ -48,16 +54,21 @@ export default function Home(): JSX.Element {
           <h2>Features</h2>
           <ul className={styles.featureList}>
             <li>Unlimited free transcription time.</li>
+            <li>
+              Everything is done locally. No risk of personal data leakage.
+            </li>
             <li>Support almost all audio and video file formats.</li>
             <li>Support exporting as subtitles(SRT/VTT) or pure text.</li>
             <li>Supports nearly 100 languages.</li>
+            <li>Support translating any language into English.</li>
             <li>Allows modification of transcription results.</li>
             <li>Automatic language detection.</li>
-            <li>
-              Offline recognition, no reliance on the internet, no risk of
-              personal data leakage.
-            </li>
+            <li>Offline recognition, no reliance on the internet.</li>
             <li>No account and login required. </li>
+            <li>
+              Audio subtitles automatically scroll as the audio file progresses.
+            </li>
+            <li>Start transcription from any position.</li>
           </ul>
         </div>
       </section>
