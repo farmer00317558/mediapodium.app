@@ -70,7 +70,7 @@ const config = {
             "Speech to Text, Audio/Video to Text, Transcription, Subtitle generation, Audio player, Video player. Free. Unlimited free transcription time.",
         },
       ],
-      image: "img/logo.png",
+      image: "img/main.png",
       navbar: {
         title: "Media Podium",
         logo: {

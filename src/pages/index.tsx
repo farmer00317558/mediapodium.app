@@ -38,6 +38,7 @@ export default function Home(): JSX.Element {
     <Layout
       title={`${siteConfig.title} | ${siteConfig.tagline}`}
       description="Media Podium aims to be an excellent personal audio and video management tool. Transcribe your audio and video files into text. There is no transcription time limit. Transcriptions can be exported as subtitles or as plain text."
+      wrapperClassName={styles.wrapper}
     >
       <HomepageHeader />
       <section className={styles.section}>
@@ -60,11 +61,15 @@ export default function Home(): JSX.Element {
             <li>Support almost all audio and video file formats.</li>
             <li>Support exporting as subtitles(SRT/VTT) or pure text.</li>
             <li>Supports nearly 100 languages.</li>
-            <li>Support translating any language into English.</li>
+            <li>Translating any language into English.</li>
             <li>Allows modification of transcription results.</li>
             <li>Automatic language detection.</li>
             <li>Offline recognition, no reliance on the internet.</li>
             <li>No account and login required. </li>
+            <li>Starting play from specific segment.</li>
+            <li>
+              Queue multiple files and automatically transcribe them one by one.
+            </li>
             <li>
               Audio subtitles automatically scroll as the audio file progresses.
             </li>
